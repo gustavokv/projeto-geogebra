@@ -1,6 +1,6 @@
 # 🧮 Matemática Interativa com GeoGebra
 
-![Status do Deploy](https://img.shields.io/github/deployments/gustavokv/projeto-geogebra/production?label=Status&style=for-the-badge)
+![Website Status](https://img.shields.io/website?url=https%3A%2F%2Fgustavokv.github.io%2Fprojeto-geogebra&style=for-the-badge)
 
 Este é um projeto acadêmico focado em fortalecer o ensino de matemática para alunos do Ensino Médio através de applets interativos desenvolvidos na plataforma GeoGebra. A landing page foi criada para apresentar e organizar esses recursos de forma clara e acessível.
 
@@ -66,7 +66,7 @@ Para executar este projeto na sua máquina, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/gustavokv/projeto-geogebra.git](https://github.com/gustavokv/projeto-geogebra.git)
+    git clone https://github.com/gustavokv/projeto-geogebra.git](https://github.com/gustavokv/projeto-geogebra.git
     ```
 
 2.  **Navegue até o diretório do projeto:**
