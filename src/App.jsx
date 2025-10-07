@@ -13,6 +13,12 @@ const projectData = {
     ],
     supervisor: "Professora Doutora Mercedes Rocío Gonzales Márquez"
   },
+  // --- ADICIONADO: Links dos formulários ---
+  forms: {
+    primeiroAno: 'https://docs.google.com/forms/d/e/1FAIpQLSfApcFLda0ytoetu-_C2KUXEOLrvmvKUCKIC6mEMEfj2U3VYA/viewform',
+    segundoAno: 'https://docs.google.com/forms/d/e/1FAIpQLScav5ZlvpggpRuA_JVBQwFq2pUQupRCYHoTIBsjXDAbYLmNhw/viewform',
+    terceiroAno: 'https://docs.google.com/forms/d/e/1FAIpQLScLbJiHSoiNGHJzcmjhIcnRMB8kZkrzKBJwlNecGyAKa2ZzHg/viewform'
+  },
   applets: {
     primeiroAno: [
       { title: 'Porcentagem', url: 'https://www.geogebra.org/m/gvwnxejv' },
@@ -40,7 +46,7 @@ const projectData = {
 
 // Card para cada Applet
 const AppletCard = ({ title, url }) => (
-  <div className="bg-white rounded-lg shadow-md p-6 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out">
+  <div className="bg-white rounded-lg shadow-md p-6 transform hover:-translate-y-2 transition-transform duration-300 ease-in-out flex flex-col justify-between">
     <h3 className="text-xl font-semibold text-gray-800 mb-4 h-16">{title}</h3>
     <a
       href={url}
@@ -53,8 +59,7 @@ const AppletCard = ({ title, url }) => (
   </div>
 );
 
-// Seção para cada ano do Ensino Médio
-const YearSection = ({ year, description, applets }) => (
+const YearSection = ({ year, description, applets, formUrl }) => (
   <section id={year.replace(' ', '-').toLowerCase()} className="mb-20 scroll-mt-20">
     <h2 className="text-4xl font-bold text-gray-900 mb-3">{year}</h2>
     <p className="text-lg text-gray-600 mb-8">{description}</p>
@@ -62,6 +67,16 @@ const YearSection = ({ year, description, applets }) => (
       {applets.map((applet) => (
         <AppletCard key={applet.title} title={applet.title} url={applet.url} />
       ))}
+    </div>
+    <div className="mt-12 text-center">
+        <a 
+            href={formUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-green-600 text-white font-bold py-3 px-8 rounded-lg text-lg hover:bg-green-700 transition-transform transform hover:scale-105"
+        >
+            Avaliar Applets do {year}
+        </a>
     </div>
   </section>
 );
@@ -101,16 +116,19 @@ function App() {
           year="1º Ano"
           description="Foco em conceitos fundamentais de proporcionalidade e na introdução ao universo da trigonometria."
           applets={projectData.applets.primeiroAno}
+          formUrl={projectData.forms.primeiroAno}
         />
         <YearSection
           year="2º Ano"
           description="Exploração de funções exponenciais e logarítmicas, além dos princípios de probabilidade e combinatória."
           applets={projectData.applets.segundoAno}
+          formUrl={projectData.forms.segundoAno}
         />
         <YearSection
           year="3º Ano"
           description="Aprofundamento em trigonometria, com foco no círculo trigonométrico e nas funções trigonométricas."
           applets={projectData.applets.terceiroAno}
+          formUrl={projectData.forms.terceiroAno}
         />
 
         {/* Equipe */}
