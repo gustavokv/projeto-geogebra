@@ -37,7 +37,7 @@ const projectData = {
     terceiroAno: [
       { title: 'Círculo Trigonométrico', url: 'https://www.geogebra.org/m/w9wpfefv' },
       { title: 'Funções Trigonométricas', url: 'https://www.geogebra.org/m/ffrukheh' },
-      { title: 'Arcos, Ângulos e Razões no Círculo', url: 'https://www.geogebra.org/m/m26c5ywb' },
+      { title: 'Arcos, Ângulos e Razões no Círculo', url: 'https://www.geogebra.org/m/tjhctsgr' },
     ],
   }
 };
