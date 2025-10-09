@@ -28,8 +28,7 @@ const projectData = {
       { title: 'Proporcionalidade Inversa', url: 'https://www.geogebra.org/m/qajh5uv6' },
     ],
     segundoAno: [
-      { title: 'Funções Exponenciais', url: 'https://www.geogebra.org/m/bs8enskc' },
-      { title: 'Funções Logarítmicas', url: 'https://www.geogebra.org/m/j8mgys5x' },
+      { title: 'Funções Exponenciais e Logarítmicas', url: 'https://www.geogebra.org/m/bs8enskc' },
       { title: 'Teste de Probabilidade Simples', url: 'https://www.geogebra.org/m/mye9wezu' },
       { title: 'Probabilidade com Dados', url: 'https://www.geogebra.org/m/vytystby' },
       { title: 'Noções de Combinatória', url: 'https://www.geogebra.org/m/fbr7kaxm' },
